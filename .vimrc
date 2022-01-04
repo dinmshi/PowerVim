@@ -1,5 +1,3 @@
-" Hello，我是PowerVim的作者，程序员Carl，欢迎关注我的微信公众号：代码随想录 
-"
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
 
@@ -249,8 +247,7 @@ func SetTitle()
     if &filetype == 'sh'
         call setline(1,"\#########################################################################")
         call append(line("."),   "\# File Name:    ".expand("%"))
-        call append(line(".")+1, "\# Author:       程序员Carl")
-        call append(line(".")+2, "\# mail:         programmercarl@163.com")
+        call append(line(".")+1, "\# Author:       Coric")
         call append(line(".")+3, "\# Created Time: ".strftime("%c"))
         call append(line(".")+4, "\#########################################################################")
         call append(line(".")+5, "\#!/bin/bash")
@@ -258,8 +255,7 @@ func SetTitle()
     else
         call setline(1, "/* ************************************************************************")
         call append(line("."),   "> File Name:     ".expand("%"))
-        call append(line(".")+1, "> Author:        程序员Carl")
-        call append(line(".")+2, "> 微信公众号:    代码随想录")
+        call append(line(".")+1, "> Author:        Coric")
         call append(line(".")+3, "> Created Time:  ".strftime("%c"))
         call append(line(".")+4, "> Description:   ")
         call append(line(".")+5, " ************************************************************************/")
@@ -309,8 +305,6 @@ nmap cc :call SetCC() <CR>
 func SetCC() 
     call append(line("."), "// vim: et tw=100 ts=4 sw=4 cc=120")  
 endfunc
-
-" Hello，我是PowerVim的作者，程序员Carl，欢迎关注我的微信公众号：代码随想录 
 
 " 使用的背景主题
 colorscheme Monokai_Gavin
